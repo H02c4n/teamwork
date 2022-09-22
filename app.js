@@ -1,5 +1,7 @@
-const Question = function (text, infoCode, options, answer) {
+import { data } from "./getquestion.js";
+const Question = function (text, teamwork, infoCode, options, answer) {
   this.text = text;
+  this.teamwork = teamwork;
   this.infoCode = infoCode;
   this.options = options;
   this.answer = answer;
@@ -23,7 +25,7 @@ Ask.prototype.lastQuestion = function () {
   return this.questions.length === this.questionIndex;
 };
 
-Ask.prototype.answer = function (answer) {
+Ask.prototype.answerQuestion = function (answer) {
   let question = this.getQuestion();
 
   if (question.checkAnswer(answer)) {
@@ -31,3 +33,16 @@ Ask.prototype.answer = function (answer) {
   }
   this.questionIndex++;
 };
+
+data.questions.forEach((question) => {
+  let soru1 = new Question(
+    question.questiontext,
+    question.teamwork,
+    question.infoCode,
+    question.options,
+    question.answer
+  );
+  console.log(soru1);
+});
+
+console.log(Object.values(data.questions));
