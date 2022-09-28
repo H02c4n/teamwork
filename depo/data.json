@@ -1,0 +1,17 @@
+{
+  "questions": [
+    {
+      "answer": "c",
+      "infoCode": "class Animal {\n static belly = [];\n eat() {\n Animal.belly.push('food');\n }\n}\nlet x = new Animal();\nx.eat();\nconsole.log(/* Add Snippet Here */); //Prints food",
+      "options": [
+        "Object.getPrototype0f (a).belly[0]",
+        "Animal.belly[0]",
+        "a.belly[0]",
+        "a.prototype.belly[0]"
+      ],
+      "questionText": "Which snippet could you add to this code to print 'food' to the console?",
+      "teamwork": "7",
+      "id": 1
+    }
+  ]
+}

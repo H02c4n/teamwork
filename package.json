@@ -3,8 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "firebase": "^9.10.0",
+    "mongoose": "^6.6.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  },
   "scripts": {
-    "json": "json-server --watch data.json"
+    "start": "nodemon --experimental-modules --es-module-specifier-resolution=node index.js"
   },
   "repository": {
     "type": "git",
@@ -16,9 +26,5 @@
   "bugs": {
     "url": "https://github.com/H02c4n/teamwork/issues"
   },
-  "homepage": "https://github.com/H02c4n/teamwork#readme",
-  "dependencies": {
-    "express": "^4.18.1",
-    "nodemon": "^2.0.20"
-  }
+  "homepage": "https://github.com/H02c4n/teamwork#readme"
 }

@@ -1,0 +1,123 @@
+1. Which snippet could you add to this code to print "food" to the console?
+class Animal {
+ static belly = [];
+ eat() {
+ Animal.belly.push('food');
+ }
+}
+let x = new Animal();
+x.eat();
+console.log(/* Add Snippet Here */); //Prints food
+A. Object.getPrototype0f (a).belly[0]
+B. Animal.belly[0]
+C. a.belly[0]
+D. a.prototype.belly[0]
+2. What is the function to stop an interval timer?
+A. stopTimer
+B. clearInterval
+C. shutdownTimer
+D. clearTimer
+tw-007-student.md 9/21/2022
+3 / 7
+3. What are 2 native functions to run code asynchronously in JavaScript ?
+A. timeout - setTimeout
+B. startInternal - setInterval
+C. setTimeout - setInterval
+D. interval - setInterval
+4. What is the output of the code below?
+let x = 0;
+async function test() {
+ x += await 2;
+ console.log(x);
+}
+test();
+x += 1;
+console.log(x);
+A. 2 3
+B. 0 1
+C. 1 2
+D. 2 2
+5.Which method converts JSON data to a JavaScript object?
+A. JSON.fromString();
+B. JSON.toObject()
+C. JSON.stringify()
+D. JSON.parse()
+6. Which Object method returns an iterable that can be used to iterate over the properties of an object?
+A. Object.get()
+B. Object.keys()
+C. Object.each()
+D. Object.loop()
+7. Which collection object allows unique value to be inserted only once?
+A. Set
+B. Object
+C. Map
+D. Array
+tw-007-student.md 9/21/2022
+4 / 7
+8. Why would you choose an asynchronous structure for your code?
+A. To use ES6 syntax
+B. To ensure that parsers enforce all JavaScript syntax rules when processing your code
+C. To ensure that tasks further down in your code aren't initiated until earlier tasks have completed
+D. To start tasks that might take some time without blocking subsequent tasks from executing immediately
+9. What is the HTTP verb to request the contents of an existing resource?
+A. GET
+B. DELETE
+C. PATCH
+D. POST
+10. What will be logged to the console?
+console.log('I');
+setTimeout(() => {
+ console.log('love');
+}, 0);
+console.log('Javascript!');
+A.
+I
+love
+Javascript!
+B. The output may change with each execution of code and cannot be determined.
+C.
+I
+Javascript!
+love
+D.
+love
+I
+Javascript!
+tw-007-student.md 9/21/2022
+5 / 7
+11. Why would you include a "use strict" statement in a JavaScript file?
+A. to tell parsers to interpret your JavaScript syntax loosely
+B. to tell parsers to enforce all JavaScript syntax rules when processing your code
+C. to instruct the browser to automatically fix any errors it finds in the code
+D. to enable ES6 features in your code
+12. Why is it usually better to work with Objects instead of Arrays to store a collection of records?
+A. Working with objects makes the code more readable.
+B. Objects are more efficient in terms of storage.
+C. Most operations involve looking up a record, and objects can do that better than arrays.
+D. Adding a record to an object is significantly faster than pushing a record into an array.
+13. Which statement is true about the "async" attribute for the HTML script tag?
+A.It can be used for both internal and external JavaScript code.
+B.It can be used only for internal JavaScript code.
+C.It can be used only for internal or external JavaScript code that exports a promise.
+D. It can be used only for external JavaScript code.
+14. What will this code print?
+var v = 1;
+var f1 = function () {
+ console.log(v);
+};
+var f2 = function () {
+ var v = 2;
+ f1();
+};
+f2();
+A. 2
+B. 1
+C. Nothing - this code will throw an error.
+D. undefined
+tw-007-student.md 9/21/2022
+6 / 7
+15. Which keyword is used to create an error?
+A. throw
+B. exception
+C. catch
+D. error

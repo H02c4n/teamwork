@@ -1,0 +1,15 @@
+body {
+  background-color: #e14c2a77;
+}
+.navbar {
+  background-color: #cd104d !important;
+}
+
+.card-header,
+.card-footer {
+  background-color: #ffe3e1 !important;
+}
+
+.btn-primary {
+  background-color: #9c2c77 !important;
+}
